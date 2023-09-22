@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    list-style: none;
+}
+
+body {
+    background-color: #141212;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #ff4500;
+    padding: 13px 0;
+
+}
+
+.toDoList {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.toDoList .taskArea {
+    background-color: #2309ee;
+}
+
+.toDoList .taskArea .done {
+    background-color: #150b63;
+    border-radius: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.toDoList .taskArea .remove {
+    background-color: #f00b0b;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    right: 15px;
+}
+
+.toDoList .taskArea h2 {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px;
+    transition: all 300ms ease;
+}
+.toDoList .taskArea ul li.check h2 {
+    text-decoration: line-through;
+    color: grey;
+    transition: all 300ms ease;
+}
+
+.toDoList .taskArea ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toDoList .taskArea ul li.removed {
+    display: none;
+}
+
+.toDoList .taskArea ul li.check .done {
+    background-color: green;
+    transition: all 300ms ease;
+}
+
+.toDoList input {
+    width: 80%;
+    background-color: #150b63;
+    border: none;
+    outline: none;
+    padding: 20px;
+}
+
+.toDoList input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.toDoList footer {
+    background-color: #150b63;
+}
